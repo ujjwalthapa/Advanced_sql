@@ -1,0 +1,28 @@
+# add dependencies
+#import pandas as pd
+#import os
+#import datetime
+#import matplotlib.pyplot as plt
+#import numpy as np
+#import time
+
+#from sqlalchemy import create_engine
+#from sqlalchemy.orm import Session
+#from sqlalchemy.ext.declarative import declarative_base
+#from sqlalchemy.ext.automap import automap_base
+
+#from sqlalchemy import Column, Integer, String, Float, and_, Date, desc, func
+
+# PyMySQL 
+#import pymysql
+#pymysql.install_as_MySQLdb()
+
+from flask import Flask, jsonify
+app = Flask(__name__)
+
+@app.route("/")
+    def hello():
+        return "Hello World!"
+
+if __name__ == "__main__":
+    app.run(debug=True)
